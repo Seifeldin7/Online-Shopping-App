@@ -25,6 +25,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.myproject.activites.UserItemViewActivity" />
         <activity android:name="com.example.myproject.activites.ItemViewActivity" />
         <activity android:name="com.example.myproject.activites.AddItemActivity" />
         <activity android:name="com.example.myproject.activites.RegisterActivity" />
