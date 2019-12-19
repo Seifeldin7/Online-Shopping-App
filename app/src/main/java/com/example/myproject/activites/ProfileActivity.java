@@ -1,4 +1,4 @@
-package com.example.myproject;
+package com.example.myproject.activites;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -18,7 +18,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.bumptech.glide.Glide;
-import com.example.myproject.MainActivity;
 import com.example.myproject.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
