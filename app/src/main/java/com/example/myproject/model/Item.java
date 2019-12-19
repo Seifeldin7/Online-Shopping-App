@@ -9,6 +9,9 @@ public class Item {
     private int itemImage;
     private Date date;
     private double price;
+    private int viewedNum;
+
+
 
     public Item(int itemID, String itemName, int itemImage, double price) {
         this.itemID = itemID;
@@ -56,5 +59,12 @@ public class Item {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+    public int getViewedNum() {
+        return viewedNum;
+    }
+
+    public void setViewedNum(int viewedNum) {
+        this.viewedNum = viewedNum;
     }
 }
