@@ -4,6 +4,25 @@
             "outputFile": "D:\\touriz\\MyProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\5c81de3051788c201b403730ff76bdd0\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endLines": "8",
+                        "endColumns": "10",
+                        "endOffsets": "431"
+                    }
+                },
+                {
                     "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\647535044886ec86dce3f9e0628dd21d\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
