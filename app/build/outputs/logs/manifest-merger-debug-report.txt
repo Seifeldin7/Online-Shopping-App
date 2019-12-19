@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-32:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5c81de3051788c201b403730ff76bdd0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\647535044886ec86dce3f9e0628dd21d\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\c6af6310a8256f9fc5872ed690678cc8\AndroidManifest.xml:2:1-11:12
@@ -62,20 +62,20 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\LENOVO\.gradle\cache
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\dea8c88ada06a1de8665e1b37931fff1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5b66a5a1ccc76e46daeb6470193765f8\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\4060b535db49054fedb7b7f8b8bdab98\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-32:12
 	package
 		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:3:5-36
 		INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml
 		INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml
-		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-27:12
+		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml
-		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-27:12
+		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:2:11-69
@@ -108,7 +108,7 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:
 	android:name
 		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:6:22-64
 application
-ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:7:5-25:19
+ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:7:5-30:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5c81de3051788c201b403730ff76bdd0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5c81de3051788c201b403730ff76bdd0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\c6af6310a8256f9fc5872ed690678cc8\AndroidManifest.xml:9:5-20
@@ -171,28 +171,48 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\LE
 		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:13:9-40
-activity#com.example.myproject.ProfileActivity
-ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:14:9-17:68
+activity#com.example.myproject.activites.UserItemViewActivity
+ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:14:9-77
+	android:name
+		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:14:19-65
+activity#com.example.myproject.activites.ItemViewActivity
+ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:15:9-64
+	android:name
+		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:15:19-61
+activity#com.example.myproject.activites.AddItemActivity
+ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:16:9-63
+	android:name
+		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:16:19-60
+activity#com.example.myproject.activites.RegisterActivity
+ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:17:9-64
+	android:name
+		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:17:19-61
+activity#com.example.myproject.activites.LoginActivity
+ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:18:9-61
+	android:name
+		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:18:19-58
+activity#com.example.myproject.activites.ProfileActivity
+ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:19:9-22:59
 	android:label
-		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:16:13-59
+		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:21:13-59
 	android:theme
-		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:17:13-56
+		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:22:13-56
 	android:name
-		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:15:13-44
-activity#com.example.myproject.MainActivity
-ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:18:9-24:20
+		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:20:13-54
+activity#com.example.myproject.activites.MainActivity
+ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:23:9-29:20
 	android:name
-		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:18:19-47
+		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:23:19-57
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml:27:27-74
 uses-sdk
 INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\touriz\MyProject\app\src\main\AndroidManifest.xml

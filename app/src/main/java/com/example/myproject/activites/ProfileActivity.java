@@ -1,4 +1,4 @@
-package com.example.myproject;
+package com.example.myproject.activites;
 
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
@@ -23,6 +23,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
+
+import com.example.myproject.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
