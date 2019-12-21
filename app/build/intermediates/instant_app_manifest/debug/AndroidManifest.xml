@@ -28,13 +28,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.myproject.activites.UserItemViewActivity" />
+        <activity android:name="com.example.myproject.activites.ItemViewActivity" />
+        <activity android:name="com.example.myproject.activites.AddItemActivity" />
+        <activity android:name="com.example.myproject.activites.RegisterActivity" />
+        <activity android:name="com.example.myproject.activites.LoginActivity" />
         <activity
-            android:name="com.example.myproject.ProfileActivity"
+            android:name="com.example.myproject.activites.ProfileActivity"
             android:label="@string/title_activity_profile"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.example.myproject.MainActivity" >
+        <activity android:name="com.example.myproject.activites.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -115,11 +119,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.example.myproject.com.android.tools.ir.server.InstantRunContentProvider"
-            android:multiprocess="true" />
     </application>
 
 </manifest>
