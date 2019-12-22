@@ -1083,7 +1083,6 @@ drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable icon_camera
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1175,6 +1174,9 @@ id bottom
 id buttonPanel
 id buttonSave
 id buttonSignUp
+id categoryGridView
+id categoryImage
+id categoryName
 id center
 id center_horizontal
 id center_vertical
@@ -1234,6 +1236,15 @@ id imageView
 id info
 id invisible
 id italic
+id itemActivityDescription
+id itemActivityImage
+id itemActivityName
+id itemActivityPrice
+id itemActivityUserMail
+id itemImage
+id itemListView
+id itemName
+id itemPrice
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
@@ -1415,8 +1426,15 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_item
+layout activity_category
+layout activity_item_view
+layout activity_login
 layout activity_main
 layout activity_profile
+layout activity_register
+layout activity_user_item_view
+layout category_item
 layout content_profile
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -1433,6 +1451,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout item_item
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1445,6 +1464,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu main_activity_menu
 menu menu
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -1508,13 +1528,17 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hidden_mail
 string hide_bottom_view_on_scroll_behavior
+string item_description
+string mail_label
 string mtrl_chip_close_icon_content_description
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string price_label
 string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
@@ -2022,6 +2046,8 @@ style Widget_MaterialComponents_TextInputLayout_OutlinedBox
 style Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense
 style Widget_MaterialComponents_Toolbar
 style Widget_Support_CoordinatorLayout
+style curvyText
+style solidText
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
