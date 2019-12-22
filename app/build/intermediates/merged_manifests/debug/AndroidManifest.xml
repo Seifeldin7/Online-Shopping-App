@@ -29,6 +29,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.myproject.activites.CategoryActivity" />
         <activity android:name="com.example.myproject.activites.UserItemViewActivity" />
         <activity android:name="com.example.myproject.activites.ItemViewActivity" />
         <activity android:name="com.example.myproject.activites.AddItemActivity" />

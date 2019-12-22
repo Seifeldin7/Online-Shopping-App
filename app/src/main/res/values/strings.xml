@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">My Project</string>
     <string name="title_activity_profile">ProfileActivity</string>
+    <string name="price_label">Price: </string>
+    <string name="mail_label">Owner\'s mail:</string>
+    <string name="hidden_mail">\?\?\?\?\?</string>
+    <string name="item_description">Description:</string>
 </resources>

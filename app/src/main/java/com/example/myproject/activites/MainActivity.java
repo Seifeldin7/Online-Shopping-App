@@ -1,5 +1,6 @@
 package com.example.myproject.activites;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -34,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
                 Category category = categories[position];
                 Log.d(DEBUGTAG, "listener working");
                 //do an intent based on the category or the id
+                Intent i = new Intent(getApplicationContext(), CategoryActivity.class);
+                //replace by taking id from category array for good measures
+//                i.putExtra("Category_ID", categories[position].id);
+                i.putExtra("Category_ID", id);
+                startActivity(i);
 
             }
 //            this function requests a refresh from the grid adapter to update an item in place
