@@ -1,30 +1,41 @@
 package com.example.myproject.model;
 
+import android.annotation.SuppressLint;
+
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Item {
-    private int itemID;
+    private String itemID;
     private String itemName;
-    private int itemImage;
-    private Date date;
+    private String itemImage;
+    private String date;
     private double price;
     private int viewedNum;
+    private String description;
+    private int ownerID;
+    private String category;
 
-
-
-    public Item(int itemID, String itemName, int itemImage, double price) {
-        this.itemID = itemID;
-        this.itemName = itemName;
-        this.itemImage = itemImage;
-        this.price = price;
-        this.date=new Date();
+    public Item() {
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+        Date current = new Date();
+        this.date=formatter.format(current);
+        this.viewedNum=0;
     }
 
-    public int getItemID() {
+//    public Item(int itemID, String itemName, int itemImage, double price) {
+//        this.itemID = itemID;
+//        this.itemName = itemName;
+//        this.itemImage = itemImage;
+//        this.price = price;
+//        this.date=new Date();
+//    }
+
+    public String getItemID() {
         return itemID;
     }
 
-    public void setItemID(int itemID) {
+    public void setItemID(String itemID) {
         this.itemID = itemID;
     }
 
@@ -36,19 +47,19 @@ public class Item {
         this.itemName = itemName;
     }
 
-    public int getItemImage() {
+    public String getItemImage() {
         return itemImage;
     }
 
-    public void setItemImage(int itemImage) {
+    public void setItemImage(String itemImage) {
         this.itemImage = itemImage;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
@@ -63,7 +74,30 @@ public class Item {
         return viewedNum;
     }
 
-    public void setViewedNum(int viewedNum) {
-        this.viewedNum = viewedNum;
+    public void incItemView(int count) {
+        this.viewedNum += count;
+    }
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public int getOwnerID() {
+        return ownerID;
+    }
+
+    public void setOwnerID(int ownerID) {
+        this.ownerID = ownerID;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
