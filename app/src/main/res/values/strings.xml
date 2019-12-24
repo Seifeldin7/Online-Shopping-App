@@ -5,4 +5,22 @@
     <string name="mail_label">Owner\'s mail:</string>
     <string name="hidden_mail">\?\?\?\?\?</string>
     <string name="item_description">Description:</string>
+    <string name="productName">Product Name</string>
+    <string name="price">Enter price</string>
+    <string name="category">Enter Your Category:</string>
+    <string name="image">Choose Image</string>
+    <string name="enter_description">Enter Description:</string>
+    <string name="description">description</string>
+    <string name="save">save</string>
+    <string name="cancel">cancel</string>
+    <string-array name="planets_array">
+        <item>Category</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
 </resources>
