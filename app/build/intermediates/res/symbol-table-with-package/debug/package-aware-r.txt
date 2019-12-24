@@ -37,6 +37,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array planets_array
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1174,6 +1175,7 @@ id bottom
 id buttonPanel
 id buttonSave
 id buttonSignUp
+id cat_view
 id categoryGridView
 id categoryImage
 id categoryName
@@ -1195,6 +1197,7 @@ id custom
 id customPanel
 id dark
 id decor_content_parent
+id decs_view
 id default_activity_button
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -1209,6 +1212,7 @@ id editTextDisplayName
 id editTextEmail
 id editTextPassword
 id edit_query
+id edtInput
 id end
 id enterAlways
 id enterAlwaysCollapsed
@@ -1222,6 +1226,7 @@ id filled
 id fixed
 id forever
 id ghost_view
+id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
@@ -1232,7 +1237,9 @@ id icon_group
 id icon_only
 id ifRoom
 id image
+id imageBtn
 id imageView
+id img
 id info
 id invisible
 id italic
@@ -1279,6 +1286,9 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id price
+id product_name
+id progress_bar
 id progress_circular
 id progress_horizontal
 id progressbar
@@ -1286,6 +1296,7 @@ id radio
 id right
 id right_icon
 id right_side
+id saveBtn
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1308,6 +1319,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id shortcut
+id show
 id showCustom
 id showHome
 id showTitle
@@ -1317,6 +1329,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id spinner
 id split_action_bar
 id spread
 id spread_inside
@@ -1498,6 +1511,8 @@ string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string cancel
+string category
 string character_counter_content_description
 string character_counter_pattern
 string common_google_play_services_enable_button
@@ -1519,6 +1534,8 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string default_web_client_id
+string description
+string enter_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string firebase_database_url
@@ -1530,6 +1547,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hidden_mail
 string hide_bottom_view_on_scroll_behavior
+string image
 string item_description
 string mail_label
 string mtrl_chip_close_icon_content_description
@@ -1538,8 +1556,11 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string price
 string price_label
+string productName
 string project_id
+string save
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_profile

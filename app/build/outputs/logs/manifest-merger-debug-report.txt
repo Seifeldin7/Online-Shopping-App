@@ -189,10 +189,10 @@ activity#com.example.myproject.activites.ItemViewActivity
 ADDED from C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\src\main\AndroidManifest.xml:18:9-64
 	android:name
 		ADDED from C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\src\main\AndroidManifest.xml:18:19-61
-activity#com.example.myproject.activites.AddItemActivity
-ADDED from C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\src\main\AndroidManifest.xml:19:9-63
+activity#com.example.myproject.activites.MainActivity
+ADDED from C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\src\main\AndroidManifest.xml:19:9-60
 	android:name
-		ADDED from C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\src\main\AndroidManifest.xml:19:19-60
+		ADDED from C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\src\main\AndroidManifest.xml:19:19-57
 activity#com.example.myproject.activites.RegisterActivity
 ADDED from C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\src\main\AndroidManifest.xml:20:9-64
 	android:name
@@ -209,10 +209,10 @@ ADDED from C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\src\main\
 		ADDED from C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\src\main\AndroidManifest.xml:25:13-56
 	android:name
 		ADDED from C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\src\main\AndroidManifest.xml:23:13-54
-activity#com.example.myproject.activites.MainActivity
+activity#com.example.myproject.activites.AddItemActivity
 ADDED from C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\src\main\AndroidManifest.xml:26:9-32:20
 	android:name
-		ADDED from C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\src\main\AndroidManifest.xml:26:19-57
+		ADDED from C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\src\main\AndroidManifest.xml:26:19-60
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\src\main\AndroidManifest.xml:27:13-31:29
 action#android.intent.action.MAIN

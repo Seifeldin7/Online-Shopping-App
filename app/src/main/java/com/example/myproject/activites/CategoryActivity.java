@@ -1,5 +1,6 @@
 package com.example.myproject.activites;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,12 +13,18 @@ import android.widget.ListView;
 import com.example.myproject.R;
 import com.example.myproject.model.Item;
 import com.example.myproject.services.ItemService;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
 public class CategoryActivity extends AppCompatActivity {
     private ArrayList<Item> items;
     private final static String DEBUGMSG = "catdbg";
+    ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,17 +35,58 @@ public class CategoryActivity extends AppCompatActivity {
         Intent intent = getIntent();
         if(intent.hasExtra("Category_ID")){
             String cat_name = intent.getStringExtra("Category_ID");
-            ItemService itemService = new ItemService();
-            items = itemService.getItemsByCat(cat_name);
+            getItemsByCat(cat_name);
         }
         else if(intent.hasExtra("User_ID")){
             int user_id = intent.getIntExtra("User_ID",0);
-            ItemService itemService = new ItemService();
-            items = itemService.getItemsByUserID(user_id);
+            getItemsByUserID(user_id);
         }
-        ListView listView = (ListView) findViewById(R.id.itemListView);
+        listView = (ListView) findViewById(R.id.itemListView);
+    }
+    public void getItemsByUserID(final int id) {
+        items = new ArrayList<>();
+        DatabaseReference databaseReference;
+        databaseReference = FirebaseDatabase.getInstance().getReference("Items");
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                    Item item = postSnapshot.getValue(Item.class);
+                    if (item.getOwnerID() == id) {
+                        items.add(item);
+                    }
+                    setAdapter();
+                }
+            }
 
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
+            }
+        });
+    }
+    public void getItemsByCat(final String cat){
+        DatabaseReference databaseReference;
+        items=new ArrayList<>();
+        databaseReference = FirebaseDatabase.getInstance().getReference("Items");
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                    Item item = postSnapshot.getValue(Item.class);
+                    if(item.getCategory().equals(cat)) {
+                        items.add(item);
+                    }
+                    setAdapter();
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+    public void setAdapter(){
         ItemAdpater itemAdpater = new ItemAdpater(items, this);
         listView.setAdapter(itemAdpater);
 

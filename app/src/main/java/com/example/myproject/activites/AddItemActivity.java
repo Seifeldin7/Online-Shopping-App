@@ -184,15 +184,21 @@ public class AddItemActivity extends AppCompatActivity {
         return mimeTypeMap.getExtensionFromMimeType(cr.getType(uri));
     }
     private void upload(){
-        StorageReference fileReference = storageReference.child(System.currentTimeMillis() + "." + getFileExtension(imageUri));
+        final StorageReference fileReference = storageReference.child(System.currentTimeMillis() + "." + getFileExtension(imageUri));
         fileReference.putFile(imageUri)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                         progressBar.setVisibility(View.INVISIBLE);
                         Toast.makeText(getApplicationContext(),"Upload Successful",Toast.LENGTH_SHORT).show();
-                        item.setItemImage(taskSnapshot.getMetadata().getReference().getDownloadUrl().toString());
-                        databaseReference.child(databaseReference.push().getKey()).setValue(item);
+                        fileReference.getDownloadUrl()
+                                .addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                    @Override
+                                    public void onSuccess(Uri uri) {
+                                        item.setItemImage(uri.toString());
+                                        databaseReference.child(databaseReference.push().getKey()).setValue(item);
+                                    }
+                                });
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
