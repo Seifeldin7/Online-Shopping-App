@@ -604,6 +604,10 @@
         "source": "C:\\Users\\Nagy\\.gradle\\caches\\transforms-2\\files-2.1\\81efca949d99855e5e3f6d718bc8d1fe\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_action_account_circle.png.flat",
+        "source": "C:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\src\\main\\res\\drawable\\ic_action_account_circle.png"
+    },
+    {
         "merged": "C:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_profile.xml.flat",
         "source": "C:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\src\\main\\res\\layout\\content_profile.xml"
     },
@@ -744,6 +748,10 @@
         "source": "C:\\Users\\Nagy\\.gradle\\caches\\transforms-2\\files-2.1\\81efca949d99855e5e3f6d718bc8d1fe\\appcompat-1.1.0\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
+        "merged": "C:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_action_add_item.png.flat",
+        "source": "C:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\src\\main\\res\\drawable\\ic_action_add_item.png"
+    },
+    {
         "merged": "C:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
         "source": "C:\\Users\\Nagy\\.gradle\\caches\\transforms-2\\files-2.1\\81efca949d99855e5e3f6d718bc8d1fe\\appcompat-1.1.0\\res\\layout\\abc_action_bar_up_container.xml"
     },
@@ -882,6 +890,10 @@
     {
         "merged": "C:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action.xml.flat",
         "source": "C:\\Users\\Nagy\\.gradle\\caches\\transforms-2\\files-2.1\\2111d963c95cc6e94705fb367f0a0943\\core-1.1.0\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_action_directions_walk.png.flat",
+        "source": "C:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\src\\main\\res\\drawable\\ic_action_directions_walk.png"
     },
     {
         "merged": "C:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1994,6 +2006,10 @@
     {
         "merged": "C:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark.xml.flat",
         "source": "C:\\Users\\Nagy\\.gradle\\caches\\transforms-2\\files-2.1\\64aa804a65a9e3423a6cc11b33d51f06\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_action_input.png.flat",
+        "source": "C:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\src\\main\\res\\drawable\\ic_action_input.png"
     },
     {
         "merged": "C:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",

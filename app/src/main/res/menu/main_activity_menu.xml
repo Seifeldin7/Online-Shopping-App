@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/addItemIcon"
+        android:icon="@drawable/ic_action_add_item"
+        app:showAsAction="ifRoom"
+        android:onClick="addItem"
+        android:title="@string/add_item">
+    </item>
+
+    <item
+        android:id="@+id/myCoursesIcon"
+        android:icon="@drawable/ic_action_account_circle"
+        app:showAsAction="ifRoom"
+        android:title="@string/my_profile">
+    </item>
+
+    <item
+        android:id="@+id/logoutIcon"
+        android:icon="@drawable/ic_action_directions_walk"
+        app:showAsAction="ifRoom"
+        android:onClick="onLogout"
+        android:title="@string/log_out">
+    </item>
+
+
+
+    <item
+        android:id="@+id/loginIcon"
+        android:icon="@drawable/ic_action_input"
+        app:showAsAction="ifRoom"
+        android:onClick="onLogin"
+        android:title="@string/log_in">
+    </item>
+
 
 </menu>
