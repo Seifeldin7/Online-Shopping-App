@@ -8,21 +8,24 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.myproject.R;
 import com.example.myproject.model.Item;
 
+import java.util.ArrayList;
+
 public class ItemAdpater extends BaseAdapter {
-    private final Item[] items;
+    private final ArrayList<Item> items;
     private final Context mContext;
 
-    public ItemAdpater(Item[] items, Context mContext) {
+    public ItemAdpater(ArrayList<Item> items, Context mContext) {
         this.items = items;
         this.mContext = mContext;
     }
 
     @Override
     public int getCount() {
-        return items.length;
+        return items.size();
     }
 
     @Override
@@ -37,7 +40,7 @@ public class ItemAdpater extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup viewGroup) {
-        final Item item = items[position];
+        final Item item = items.get(position);
 
         //if grid view recycled a cell re-instantiate it
         if (convertView == null) {
@@ -49,10 +52,9 @@ public class ItemAdpater extends BaseAdapter {
         TextView itemName = (TextView) convertView.findViewById(R.id.itemName);
         TextView itemPrice = (TextView) convertView.findViewById(R.id.itemPrice);
 
+        Glide.with(mContext).load(item.getItemImage()).into(itemImage);
         itemName.setText(item.getItemName());
         itemPrice.setText(item.getPrice() + "L.E.");
-        //TODO replace image with actual image
-        itemImage.setImageResource(R.drawable.ic_launcher_foreground);
 
         return convertView;
     }

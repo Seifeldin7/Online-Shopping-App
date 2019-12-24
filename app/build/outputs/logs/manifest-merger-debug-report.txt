@@ -12,6 +12,7 @@ MERGED from [com.google.firebase:firebase-database:10.0.1] C:\Users\Nagy\.gradle
 MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\78604f2ac94285e249500cbbfbcdd29b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.android.gms:play-services-gcm:16.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\2d44893fb22c38b32ce00d8329d12ddf\jetified-play-services-gcm-16.0.0\AndroidManifest.xml:17:1-28:12
 MERGED from [com.google.firebase:firebase-storage:19.1.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\bf65a5c92e5afb304d99f97463e3800e\firebase-storage-19.1.0\AndroidManifest.xml:15:1-39:12
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\90efcab6517bd9ff2c5de5cd0493bd69\glide-4.10.0\AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\f35efeeadd8a9de3bb319349a994980f\play-services-flags-16.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-iid:16.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\891d6b859869dc44b381b15321f68c4d\jetified-play-services-iid-16.0.0\AndroidManifest.xml:17:1-28:12
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\b46c8d9a134b6a19bced47f11c3f1144\firebase-auth-interop-18.0.0\AndroidManifest.xml:2:1-10:12
@@ -51,6 +52,7 @@ MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Na
 MERGED from [androidx.core:core:1.1.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\2111d963c95cc6e94705fb367f0a0943\core-1.1.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\fd064047dcc5c760ea467e29ddd27dd5\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\954eb4de376a16100305e40e836d40c1\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\4007dbb0ce6c4b05366ce6a30fcabccc\gifdecoder-4.10.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\0e75880822db093dee974fe8bfb42759\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\248f34d6e745ff7b377a47dfdb400c77\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\6bb6cee3325dcdf5ab46767b08e4cd0f\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -121,6 +123,8 @@ MERGED from [com.google.android.gms:play-services-gcm:16.0.0] C:\Users\Nagy\.gra
 MERGED from [com.google.android.gms:play-services-gcm:16.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\2d44893fb22c38b32ce00d8329d12ddf\jetified-play-services-gcm-16.0.0\AndroidManifest.xml:26:5-20
 MERGED from [com.google.firebase:firebase-storage:19.1.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\bf65a5c92e5afb304d99f97463e3800e\firebase-storage-19.1.0\AndroidManifest.xml:29:5-37:19
 MERGED from [com.google.firebase:firebase-storage:19.1.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\bf65a5c92e5afb304d99f97463e3800e\firebase-storage-19.1.0\AndroidManifest.xml:29:5-37:19
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\90efcab6517bd9ff2c5de5cd0493bd69\glide-4.10.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\90efcab6517bd9ff2c5de5cd0493bd69\glide-4.10.0\AndroidManifest.xml:10:5-20
 MERGED from [com.google.android.gms:play-services-iid:16.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\891d6b859869dc44b381b15321f68c4d\jetified-play-services-iid-16.0.0\AndroidManifest.xml:26:5-20
 MERGED from [com.google.android.gms:play-services-iid:16.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\891d6b859869dc44b381b15321f68c4d\jetified-play-services-iid-16.0.0\AndroidManifest.xml:26:5-20
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\b46c8d9a134b6a19bced47f11c3f1144\firebase-auth-interop-18.0.0\AndroidManifest.xml:7:5-8:19
@@ -155,6 +159,8 @@ MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Nagy
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\6540179fca98ca01a1e92634735ddf22\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.1.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\2111d963c95cc6e94705fb367f0a0943\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\2111d963c95cc6e94705fb367f0a0943\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\4007dbb0ce6c4b05366ce6a30fcabccc\gifdecoder-4.10.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\4007dbb0ce6c4b05366ce6a30fcabccc\gifdecoder-4.10.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\0e75880822db093dee974fe8bfb42759\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\0e75880822db093dee974fe8bfb42759\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
@@ -237,6 +243,8 @@ MERGED from [com.google.android.gms:play-services-gcm:16.0.0] C:\Users\Nagy\.gra
 MERGED from [com.google.android.gms:play-services-gcm:16.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\2d44893fb22c38b32ce00d8329d12ddf\jetified-play-services-gcm-16.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-storage:19.1.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\bf65a5c92e5afb304d99f97463e3800e\firebase-storage-19.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-storage:19.1.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\bf65a5c92e5afb304d99f97463e3800e\firebase-storage-19.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\90efcab6517bd9ff2c5de5cd0493bd69\glide-4.10.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\90efcab6517bd9ff2c5de5cd0493bd69\glide-4.10.0\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\f35efeeadd8a9de3bb319349a994980f\play-services-flags-16.0.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\f35efeeadd8a9de3bb319349a994980f\play-services-flags-16.0.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-iid:16.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\891d6b859869dc44b381b15321f68c4d\jetified-play-services-iid-16.0.0\AndroidManifest.xml:20:5-44
@@ -315,6 +323,8 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Nagy\.gradle\c
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\fd064047dcc5c760ea467e29ddd27dd5\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\954eb4de376a16100305e40e836d40c1\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\954eb4de376a16100305e40e836d40c1\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\4007dbb0ce6c4b05366ce6a30fcabccc\gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\4007dbb0ce6c4b05366ce6a30fcabccc\gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\0e75880822db093dee974fe8bfb42759\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\0e75880822db093dee974fe8bfb42759\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Nagy\.gradle\caches\transforms-2\files-2.1\248f34d6e745ff7b377a47dfdb400c77\interpolator-1.0.0\AndroidManifest.xml:20:5-44

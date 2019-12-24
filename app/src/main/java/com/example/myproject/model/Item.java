@@ -2,10 +2,11 @@ package com.example.myproject.model;
 
 import android.annotation.SuppressLint;
 
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Item {
+public class Item implements Serializable {
     private String itemID;
     private String itemName;
     private String itemImage;

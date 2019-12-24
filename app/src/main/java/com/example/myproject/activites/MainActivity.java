@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(), CategoryActivity.class);
                 //replace by taking id from category array for good measures
 //                i.putExtra("Category_ID", categories[position].id);
-                i.putExtra("Category_ID", id);
+                i.putExtra("Category_ID", category.getName());
                 startActivity(i);
 
             }
