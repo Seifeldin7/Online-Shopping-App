@@ -1,5 +1,4 @@
-package com.example.secondapp;
-
+package com.example.myproject.activites;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -124,9 +123,10 @@ public class AddItemActivity extends AppCompatActivity {
                 item.setPrice(price);
                 //item.setOwnerID();
                 upload();
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
             }
         });
-        showBtn=findViewById(R.id.show);
     }
 
     public void selectImage(View v) {
