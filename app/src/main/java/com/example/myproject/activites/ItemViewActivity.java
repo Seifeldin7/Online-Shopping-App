@@ -16,7 +16,7 @@ import com.example.myproject.model.Item;
 public class ItemViewActivity extends AppCompatActivity {
 
     ImageView imageView;
-    TextView name,price, description;
+    TextView name,price, description, date;
     EditText mail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,9 @@ public class ItemViewActivity extends AppCompatActivity {
 
         imageView = findViewById(R.id.itemActivityImage);
         name = findViewById(R.id.itemActivityName);
-        price= findViewById(R.id.itemActivityPrice);
-        description= findViewById(R.id.itemActivityDescription);
+        price = findViewById(R.id.itemActivityPrice);
+        description = findViewById(R.id.itemActivityDescription);
+        date = findViewById(R.id.itemActivityDate);
         mail= findViewById(R.id.itemActivityUserMail);
 
         Glide.with(this).load(item.getItemImage()).into(imageView);
@@ -36,6 +37,7 @@ public class ItemViewActivity extends AppCompatActivity {
         name.setText(item.getItemName());
         price.setText(item.getPrice() + "EGP");
         description.setText(item.getItemName());
+        date.setText(item.getDate());
 
         mail.setOnClickListener(new View.OnClickListener() {
             @Override

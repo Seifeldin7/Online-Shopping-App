@@ -102,4 +102,37 @@
             android:text="@string/hidden_mail"
             android:textStyle="bold" />
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            style="@style/curvyText"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:paddingRight="8dp"
+            android:text="@string/item_date"
+            />
+
+        <EditText
+            android:id="@+id/itemActivityDate"
+            style="@style/solidText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:editable="false"
+            android:paddingTop="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="2/2"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
 </LinearLayout>

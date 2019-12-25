@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         categories = new Category[10];
 
 
-        for(int i = 0; i < categories.length; i++) categories[i] = new Category();
+        for(int i = 0; i < categories.length; i++) categories[i] = new Category("Calculators",R.drawable.calculators);
         CategoryAdapter categoryAdapter = new CategoryAdapter(categories,this);
         gridView.setAdapter(categoryAdapter);
 

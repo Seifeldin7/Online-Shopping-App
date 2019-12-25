@@ -50,8 +50,8 @@ public class CategoryAdapter extends BaseAdapter {
         ImageView image = (ImageView) convertView.findViewById(R.id.categoryImage);
 
         //replace by actual category name from position
-        text.setText("Category 1");
-        image.setImageResource(R.drawable.ic_launcher_foreground);
+        text.setText(category.getName());
+        image.setImageResource(category.getImage());
 
         return convertView;
     }
