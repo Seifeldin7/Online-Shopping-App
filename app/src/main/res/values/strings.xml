@@ -17,6 +17,7 @@
     <string name="my_profile">My Profile</string>
     <string name="log_out">Log Out</string>
     <string name="log_in">Log In</string>
+    <string name="choose_your_image">Choose your image</string>
 
     <string-array name="planets_array">
         <item>Category</item>

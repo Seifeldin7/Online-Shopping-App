@@ -10,7 +10,9 @@
     tools:context=".activites.AddItemActivity">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:id="@+id/scrollView"
+        android:layout_height="0dp"
+        android:layout_weight="2">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -19,34 +21,45 @@
                 android:layout_height="match_parent"
                 android:layout_margin="24dp"
                 >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_text_view"
+                    android:text="@string/choose_your_image"/>
+                <ImageButton
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/image_text_view"
+                    android:background="@drawable/ic_action_add_photo"
+                    />
+
                 <EditText
                     android:id="@+id/product_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/productName" />
+                    android:hint="@string/productName"
+                    android:layout_marginTop="30dp"
+                    android:singleLine="true"
+                    android:layout_below="@+id/img"/>
                 <EditText
                     android:id="@+id/price"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/product_name"
                     android:hint="@string/price"
+                    android:layout_marginTop="25dp"
                     android:inputType="numberDecimal"/>
 
-                <TextView
-                    android:id="@+id/cat_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/price"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/category" />
 
                 <Spinner
                     android:id="@+id/spinner"
-                    android:layout_width="fill_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/price"
-                    android:layout_marginTop="10dp"
-                    android:layout_toEndOf="@id/cat_view"/>
+
+                    android:layout_marginTop="25dp" />
                 <TextView
                     android:id="@+id/decs_view"
                     android:layout_width="wrap_content"
@@ -64,49 +77,26 @@
                     android:layout_below="@id/decs_view"
                     android:maxLength="2000"
                     android:maxLines="4" />
-
-                <Button
-                    android:id="@+id/imageBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/edtInput"
-                    android:text="@string/image"
-                    android:onClick="selectImage"/>
-
-                <ImageView
-                    android:id="@+id/img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/imageBtn"
-                    />
-
-
                 <ProgressBar
                     android:id="@+id/progress_bar"
+                    android:layout_below="@id/edtInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/img"
                     android:visibility="invisible"
                     />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/progress_bar"
-                    android:gravity="center|bottom">
-                    <Button
-                        android:id="@+id/saveBtn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:text="@string/save" />
-                    <Button
-                        android:id="@+id/show"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-
-                        />
-                </LinearLayout>
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save" />
+</LinearLayout>
+
 </LinearLayout>

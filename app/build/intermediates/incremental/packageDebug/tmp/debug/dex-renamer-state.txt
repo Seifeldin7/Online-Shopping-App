@@ -1,4 +1,4 @@
-#Wed Dec 25 01:42:11 EET 2019
+#Wed Dec 25 06:45:09 EET 2019
 base.0=C\:\\Users\\Nagy\\AndroidStudioProjects\\Online-Shopping-App\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

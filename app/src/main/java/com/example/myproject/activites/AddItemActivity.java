@@ -13,8 +13,10 @@ import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,7 +36,7 @@ import java.io.FileNotFoundException;
 
 public class AddItemActivity extends AppCompatActivity {
 
-    private ImageView imageview;
+    private ImageButton imageview;
     private Item item;
     private Button saveBtn;
     private Boolean imgEntered;
@@ -45,6 +47,7 @@ public class AddItemActivity extends AppCompatActivity {
     private StorageReference storageReference;
     private DatabaseReference databaseReference;
     private Uri imageUri;
+
 
 
     @Override
@@ -72,7 +75,12 @@ public class AddItemActivity extends AppCompatActivity {
         spinner.setAdapter(adapter);
 
         spinner.getOnItemSelectedListener();
-
+        imageview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                selectImage();
+            }
+        });
 
         saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +88,12 @@ public class AddItemActivity extends AppCompatActivity {
                 saveBtn.setEnabled(false);
                 saveBtn.setVisibility(View.INVISIBLE);
                 progressBar.setVisibility(View.VISIBLE);
+                imageview.setEnabled(false);
+                saveBtn.setEnabled(false);
+                nameView.setEnabled(false);
+                priceView.setEnabled(false);
+                descrView .setEnabled(false);
+                spinner.setEnabled(false);
                 Double price=0.0;
                 String description="";
                 String name="";
@@ -123,13 +137,12 @@ public class AddItemActivity extends AppCompatActivity {
                 item.setPrice(price);
                 //item.setOwnerID();
                 upload();
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(intent);
+
             }
         });
     }
 
-    public void selectImage(View v) {
+    public void selectImage() {
         Intent pickPhoto = new Intent(Intent.ACTION_PICK,
                 android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(pickPhoto , 1);
@@ -177,6 +190,13 @@ public class AddItemActivity extends AppCompatActivity {
         saveBtn.setVisibility(View.VISIBLE);
         progressBar.setVisibility(View.INVISIBLE);
         Incomplete =false;
+        imageview.setEnabled(true);
+        saveBtn.setEnabled(true);
+        nameView.setEnabled(true);
+        priceView.setEnabled(true);
+        descrView .setEnabled(true);
+        spinner.setEnabled(true);
+
     }
     private String getFileExtension(Uri uri){
         ContentResolver cr=getContentResolver();
@@ -197,8 +217,16 @@ public class AddItemActivity extends AppCompatActivity {
                                     public void onSuccess(Uri uri) {
                                         item.setItemImage(uri.toString());
                                         databaseReference.child(databaseReference.push().getKey()).setValue(item);
+                                        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                                        startActivity(intent);
                                     }
-                                });
+                                }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                enable();
+                                Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_SHORT).show();
+                            }
+                        });
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
