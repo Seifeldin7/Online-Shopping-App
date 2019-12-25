@@ -1079,6 +1079,10 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_action_account_circle
+drawable ic_action_add_item
+drawable ic_action_directions_walk
+drawable ic_action_input
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1161,6 +1165,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addItemIcon
 id adjust_height
 id adjust_width
 id alertTitle
@@ -1261,6 +1266,8 @@ id line1
 id line3
 id listMode
 id list_item
+id loginIcon
+id logoutIcon
 id masked
 id menuLogout
 id message
@@ -1269,6 +1276,7 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id myCoursesIcon
 id navigation_header_container
 id never
 id none
@@ -1508,6 +1516,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string add_item
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -1549,8 +1558,11 @@ string hidden_mail
 string hide_bottom_view_on_scroll_behavior
 string image
 string item_description
+string log_in
+string log_out
 string mail_label
 string mtrl_chip_close_icon_content_description
+string my_profile
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
