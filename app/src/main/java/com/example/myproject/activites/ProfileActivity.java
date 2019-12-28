@@ -3,10 +3,8 @@ package com.example.myproject.activites;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -23,7 +21,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
-
 import com.example.myproject.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -92,16 +89,17 @@ public class ProfileActivity extends AppCompatActivity {
         super.onStart();
         if (mAuth.getCurrentUser() == null) {
             finish();
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, LoginActivity.class));
         }
     }
 
     private void loadUserInformation() {
         final FirebaseUser user = mAuth.getCurrentUser();
-        profileImageUrl = user.getPhotoUrl().toString();
+        //profileImageUrl = user.getPhotoUrl().toString();
         if (user != null) {
             if (user.getPhotoUrl() != null) {
-                Glide.with(this)
+                System.out.println("++++++++++++++++++++++++++++++++++++++++++");
+                Glide.with(ProfileActivity.this)
                         .load(user.getPhotoUrl().toString())
                         .into(imageView);
             }
@@ -155,9 +153,9 @@ public class ProfileActivity extends AppCompatActivity {
             imageView.setImageURI(uriProfileImage);
             try {
 
-                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uriProfileImage);
-                imageView.setImageBitmap(bitmap);
-                uploadImageToFirebaseStorage();
+                //Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uriProfileImage);
+                //imageView.setImageBitmap(bitmap);
+               uploadImageToFirebaseStorage();
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -177,13 +175,18 @@ public class ProfileActivity extends AppCompatActivity {
             progressDialog.setTitle("Uploading...");
             progressDialog.show();
 
-            StorageReference ref = storageReference.child("profilepics/" +System.currentTimeMillis()+"."+getExtension(uriProfileImage));
+            StorageReference ref = storageReference.child("profilepics/" +System.currentTimeMillis()+"." + getExtension(uriProfileImage));
             ref.putFile(uriProfileImage)
                     .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                             progressDialog.dismiss();
-                            profileImageUrl = taskSnapshot.toString();
+                            taskSnapshot.getStorage().getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                @Override
+                                public void onSuccess(Uri uri) {
+                                    profileImageUrl = uri.toString();
+                                }
+                            });
                             Toast.makeText(ProfileActivity.this, "Uploaded", Toast.LENGTH_SHORT).show();
                         }
                     })
@@ -222,7 +225,7 @@ public class ProfileActivity extends AppCompatActivity {
 
                 FirebaseAuth.getInstance().signOut();
                 finish();
-                startActivity(new Intent(this, MainActivity.class));
+                startActivity(new Intent(this, LoginActivity.class));
 
                 break;
         }
