@@ -12,10 +12,10 @@
 
         <ImageView
             android:id="@+id/categoryImage"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/calculators" />
 
     </FrameLayout>
 

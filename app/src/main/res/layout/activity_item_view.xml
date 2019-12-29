@@ -8,15 +8,13 @@
     tools:context=".activites.ItemViewActivity">
 
 
-
     <ImageView
         android:id="@+id/itemActivityImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/common_google_signin_btn_icon_dark"
-        />
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
     <TextView
         android:id="@+id/itemActivityName"
         android:layout_width="match_parent"

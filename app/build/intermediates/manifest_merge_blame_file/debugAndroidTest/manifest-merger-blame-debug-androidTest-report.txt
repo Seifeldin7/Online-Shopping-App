@@ -3,31 +3,31 @@
 3    package="com.example.myproject.test" >
 4
 5    <uses-sdk
-5-->C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8659005416600609347.xml:5:5-74
+5-->D:\books+files\ASU_BSc\Senior1\projects\MobileComputing\Online Shopping App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4187765798165596757.xml:5:5-74
 6        android:minSdkVersion="21"
-6-->C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8659005416600609347.xml:5:15-41
+6-->D:\books+files\ASU_BSc\Senior1\projects\MobileComputing\Online Shopping App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4187765798165596757.xml:5:15-41
 7        android:targetSdkVersion="29" />
-7-->C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8659005416600609347.xml:5:42-71
+7-->D:\books+files\ASU_BSc\Senior1\projects\MobileComputing\Online Shopping App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4187765798165596757.xml:5:42-71
 8
 9    <instrumentation
-9-->C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8659005416600609347.xml:11:5-15:71
+9-->D:\books+files\ASU_BSc\Senior1\projects\MobileComputing\Online Shopping App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4187765798165596757.xml:11:5-15:71
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8659005416600609347.xml:11:22-76
+10-->D:\books+files\ASU_BSc\Senior1\projects\MobileComputing\Online Shopping App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4187765798165596757.xml:11:22-76
 11        android:functionalTest="false"
-11-->C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8659005416600609347.xml:14:22-52
+11-->D:\books+files\ASU_BSc\Senior1\projects\MobileComputing\Online Shopping App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4187765798165596757.xml:14:22-52
 12        android:handleProfiling="false"
-12-->C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8659005416600609347.xml:13:22-53
+12-->D:\books+files\ASU_BSc\Senior1\projects\MobileComputing\Online Shopping App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4187765798165596757.xml:13:22-53
 13        android:label="Tests for com.example.myproject"
-13-->C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8659005416600609347.xml:15:22-69
+13-->D:\books+files\ASU_BSc\Senior1\projects\MobileComputing\Online Shopping App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4187765798165596757.xml:15:22-69
 14        android:targetPackage="com.example.myproject" />
-14-->C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8659005416600609347.xml:12:22-67
+14-->D:\books+files\ASU_BSc\Senior1\projects\MobileComputing\Online Shopping App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4187765798165596757.xml:12:22-67
 15
 16    <application android:debuggable="true" >
-16-->C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8659005416600609347.xml:7:5-9:19
-16-->C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8659005416600609347.xml:7:18-43
+16-->D:\books+files\ASU_BSc\Senior1\projects\MobileComputing\Online Shopping App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4187765798165596757.xml:7:5-9:19
+16-->D:\books+files\ASU_BSc\Senior1\projects\MobileComputing\Online Shopping App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4187765798165596757.xml:7:18-43
 17        <uses-library android:name="android.test.runner" />
-17-->C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8659005416600609347.xml:8:9-60
-17-->C:\Users\Nagy\AndroidStudioProjects\Online-Shopping-App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8659005416600609347.xml:8:23-57
+17-->D:\books+files\ASU_BSc\Senior1\projects\MobileComputing\Online Shopping App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4187765798165596757.xml:8:9-60
+17-->D:\books+files\ASU_BSc\Senior1\projects\MobileComputing\Online Shopping App\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4187765798165596757.xml:8:23-57
 18    </application>
 19
 20</manifest>

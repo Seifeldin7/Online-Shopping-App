@@ -32,10 +32,13 @@ public class MainActivity extends AppCompatActivity {
         GridView gridView = (GridView)findViewById(R.id.categoryGridView);
 
         //call a function to return categories array
-        categories = new Category[10];
+        categories = new Category[5];
 
-
-        for(int i = 0; i < categories.length; i++) categories[i] = new Category("Calculators",R.drawable.calculators);
+        categories[0] = new Category("Calculators",R.drawable.calculators);
+        categories[1] = new Category("Drawing Tools",R.drawable.drawing);
+        categories[2] = new Category("Electronics",R.drawable.electronics);
+        categories[3] = new Category("Stationery",R.drawable.stationery);
+        categories[4] = new Category("Other",R.drawable.other);
         CategoryAdapter categoryAdapter = new CategoryAdapter(categories,this);
         gridView.setAdapter(categoryAdapter);
 
