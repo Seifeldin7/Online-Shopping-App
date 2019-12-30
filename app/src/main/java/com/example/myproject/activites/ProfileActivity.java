@@ -48,9 +48,11 @@ public class ProfileActivity extends AppCompatActivity {
     String profileImageUrl;
 
     FirebaseAuth mAuth;
-    //
+    
     FirebaseStorage storage;
     StorageReference storageReference;
+    EditText emailText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,9 +64,9 @@ public class ProfileActivity extends AppCompatActivity {
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference("Images");
         editText = (EditText) findViewById(R.id.editTextDisplayName);
-       // editMobile = (EditText) findViewById(R.id.editTextMobile);
         imageView = (ImageView) findViewById(R.id.imageView);
         progressBar = (ProgressBar) findViewById(R.id.progressbar);
+        emailText = findViewById(R.id.editTextemail);
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,6 +108,9 @@ public class ProfileActivity extends AppCompatActivity {
 
             if (user.getDisplayName() != null) {
                 editText.setText(user.getDisplayName());
+            }
+            if(user.getEmail !=null){
+                emailText.setText(user.getEmail);
             }
 
         }
