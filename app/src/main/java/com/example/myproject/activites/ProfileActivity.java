@@ -109,8 +109,8 @@ public class ProfileActivity extends AppCompatActivity {
             if (user.getDisplayName() != null) {
                 editText.setText(user.getDisplayName());
             }
-            if(user.getEmail !=null){
-                emailText.setText(user.getEmail);
+            if(user.getEmail() != null){
+                emailText.setText(user.getEmail());
             }
 
         }
